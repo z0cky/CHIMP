@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/new/prefix1"/>
+    <qresource prefix="/icon">
+        <file>icons/001-picture.png</file>
+        <file>icons/011-grid.png</file>
+        <file>icons/025-eraser.png</file>
+        <file>icons/029-flip.png</file>
+        <file>icons/030-rotation.png</file>
+        <file>icons/034-crop.png</file>
+        <file>icons/041-colors.png</file>
+        <file>icons/048-type.png</file>
+        <file>icons/029-flip2.png</file>
+        <file>icons/rotation2.png</file>
+        <file>icons/invert.png</file>
+        <file>icons/line.png</file>
+        <file>icons/rectangle.png</file>
+        <file>icons/elipse.png</file>
+        <file>icons/selection.png</file>
+        <file>icons/redo.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/paintbrush.png</file>
+        <file>icons/width.png</file>
+        <file>icons/CHIMP.png</file>
+        <file>icons/014-file.png</file>
+        <file>icons/full-screen (1).png</file>
+        <file>icons/keyboard (2).png</file>
+        <file>icons/new-window (1).png</file>
+        <file>icons/quit.png</file>
+        <file>icons/save.png</file>
+        <file>icons/theme.png</file>
+        <file>icons/info (1).png</file>
+        <file>icons/project.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

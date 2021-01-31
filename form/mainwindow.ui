@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1294</width>
+    <height>669</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_8">
+    <item row="1" column="3">
+     <widget class="QCheckBox" name="checkGreen">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Green</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QCheckBox" name="checkRed">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Red</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QCheckBox" name="checkBlue">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>25</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Blue</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="5">
+     <widget class="QFrame" name="colorFrame">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>125</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_9">
+       <item row="1" column="0">
+        <widget class="QPushButton" name="pushButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>25</horstretch>
+           <verstretch>25</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">image: url(:/icon/icons/041-colors.png);
+background-image: url(:/icon/icons/041-colors.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QSpinBox" name="spinRed">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Red</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="2">
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="0">
+          <widget class="QSpinBox" name="spinGreen">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Green</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="3">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <widget class="QSpinBox" name="spinBlue">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Blue</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0" colspan="4">
+        <layout class="QGridLayout" name="gridLayout_7">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Color filter</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="HSliderColor">
+           <property name="minimum">
+            <number>-50</number>
+           </property>
+           <property name="maximum">
+            <number>50</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="5">
+     <widget class="QFrame" name="sliderFrame">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>175</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_Contrast">
+         <property name="text">
+          <string>Contrast</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_Saturation">
+         <property name="text">
+          <string>Saturation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_Shadows">
+         <property name="text">
+          <string>Shadows</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_Highlights">
+         <property name="text">
+          <string>Highlights</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QSlider" name="horizontalSliderBrightness">
+         <property name="font">
+          <font>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::StrongFocus</enum>
+         </property>
+         <property name="minimum">
+          <number>-128</number>
+         </property>
+         <property name="maximum">
+          <number>128</number>
+         </property>
+         <property name="value">
+          <number>0</number>
+         </property>
+         <property name="tracking">
+          <bool>true</bool>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="label_Brightness">
+         <property name="text">
+          <string>Brightness</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QSlider" name="horizontalSliderSaturation">
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QSlider" name="horizontalSliderShadows">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QSlider" name="horizontalSliderHighlights">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="singleStep">
+          <number>1</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QSlider" name="horizontalSliderContrast">
+         <property name="minimum">
+          <number>-128</number>
+         </property>
+         <property name="maximum">
+          <number>128</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="5">
+     <widget class="QToolBox" name="toolBox">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>300</width>
+        <height>260</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>300</width>
+        <height>260</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>300</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <attribute name="label">
+        <string>Histogram Gray Scale</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QGraphicsView" name="graphicsHistBW"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>300</width>
+         <height>190</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Histogram RGB</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QGraphicsView" name="graphicsHistRGB"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="4">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1294</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen_Project"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_Project"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Setti&amp;ngs</string>
+    </property>
+    <widget class="QMenu" name="menuTheme_2">
+     <property name="title">
+      <string>&amp;Theme</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../resource/icons.qrc">
+       <normaloff>:/icon/icons/theme.png</normaloff>:/icon/icons/theme.png</iconset>
+     </property>
+     <addaction name="actionDark_2"/>
+     <addaction name="actionAqua"/>
+     <addaction name="actionElegantNight"/>
+     <addaction name="actionNeon"/>
+     <addaction name="actionWanderlust"/>
+     <addaction name="actionPicPax"/>
+     <addaction name="actionGenetive"/>
+     <addaction name="actionTCobra"/>
+    </widget>
+    <addaction name="menuTheme_2"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionFull_Screen_Mode"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>&amp;Window</string>
+    </property>
+    <addaction name="actionNew_Window"/>
+    <addaction name="actionClose_2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout_CHIMP"/>
+    <addaction name="actionShortcuts"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+   <addaction name="actionUndo"/>
+   <addaction name="actionRedo"/>
+   <addaction name="actionSelection"/>
+   <addaction name="actionCrop"/>
+   <addaction name="actionResize"/>
+   <addaction name="actionMirrorX"/>
+   <addaction name="actionMirrorY"/>
+   <addaction name="actionRotateLeft90"/>
+   <addaction name="actionRotateRight90"/>
+   <addaction name="actionNegative"/>
+   <addaction name="actionPenWidth"/>
+   <addaction name="actionBrush"/>
+   <addaction name="actionEllipse"/>
+   <addaction name="actionRectangle"/>
+   <addaction name="actionLine"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/save.png</normaloff>:/icon/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/save.png</normaloff>:/icon/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/001-picture.png</normaloff>:/icon/icons/001-picture.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/014-file.png</normaloff>:/icon/icons/014-file.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/quit.png</normaloff>:/icon/icons/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/undo.png</normaloff>:/icon/icons/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/redo.png</normaloff>:/icon/icons/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen_Mode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/full-screen (1).png</normaloff>:/icon/icons/full-screen (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>F&amp;ull Screen Mode</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionNew_Window">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/new-window (1).png</normaloff>:/icon/icons/new-window (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New Window</string>
+   </property>
+  </action>
+  <action name="actionClose_2">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/quit.png</normaloff>:/icon/icons/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>C&amp;lose</string>
+   </property>
+  </action>
+  <action name="actionAbout_CHIMP">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/info (1).png</normaloff>:/icon/icons/info (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About CHIMP</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/keyboard (2).png</normaloff>:/icon/icons/keyboard (2).png</iconset>
+   </property>
+   <property name="text">
+    <string>S&amp;hortcuts</string>
+   </property>
+  </action>
+  <action name="actionBrush">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/paintbrush.png</normaloff>:/icon/icons/paintbrush.png</iconset>
+   </property>
+   <property name="text">
+    <string>Brush</string>
+   </property>
+  </action>
+  <action name="actionCrop">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/034-crop.png</normaloff>:/icon/icons/034-crop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Crop</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionDark_2">
+   <property name="text">
+    <string>Dark</string>
+   </property>
+  </action>
+  <action name="actionAqua">
+   <property name="text">
+    <string>Aqua</string>
+   </property>
+  </action>
+  <action name="actionElegantNight">
+   <property name="text">
+    <string>Elegant</string>
+   </property>
+  </action>
+  <action name="actionNeon">
+   <property name="text">
+    <string>Neon</string>
+   </property>
+  </action>
+  <action name="actionWanderlust">
+   <property name="text">
+    <string>Wanderlust</string>
+   </property>
+  </action>
+  <action name="actionPicPax">
+   <property name="text">
+    <string>PicPax</string>
+   </property>
+  </action>
+  <action name="actionGenetive">
+   <property name="text">
+    <string>Genetive</string>
+   </property>
+  </action>
+  <action name="actionTCobra">
+   <property name="text">
+    <string>TCobra</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/011-grid.png</normaloff>:/icon/icons/011-grid.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resize</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/elipse.png</normaloff>:/icon/icons/elipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ellipse</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/rectangle.png</normaloff>:/icon/icons/rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rectangle</string>
+   </property>
+  </action>
+  <action name="actionNegative">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/invert.png</normaloff>:/icon/icons/invert.png</iconset>
+   </property>
+   <property name="text">
+    <string>Negative</string>
+   </property>
+   <property name="toolTip">
+    <string>Invert Color</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionMirrorX">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/029-flip2.png</normaloff>:/icon/icons/029-flip2.png</iconset>
+   </property>
+   <property name="text">
+    <string>MirrorX</string>
+   </property>
+   <property name="toolTip">
+    <string>Mirror Horizontally</string>
+   </property>
+  </action>
+  <action name="actionMirrorY">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/029-flip.png</normaloff>:/icon/icons/029-flip.png</iconset>
+   </property>
+   <property name="text">
+    <string>MirrorY</string>
+   </property>
+   <property name="toolTip">
+    <string>Mirror Vertically</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/line.png</normaloff>:/icon/icons/line.png</iconset>
+   </property>
+   <property name="text">
+    <string>Line</string>
+   </property>
+  </action>
+  <action name="actionSelection">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/selection.png</normaloff>:/icon/icons/selection.png</iconset>
+   </property>
+   <property name="text">
+    <string>Selection</string>
+   </property>
+  </action>
+  <action name="actionRotateRight90">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/030-rotation.png</normaloff>:/icon/icons/030-rotation.png</iconset>
+   </property>
+   <property name="text">
+    <string>RotateRight90</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate right</string>
+   </property>
+  </action>
+  <action name="actionRotateLeft90">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/rotation2.png</normaloff>:/icon/icons/rotation2.png</iconset>
+   </property>
+   <property name="text">
+    <string>RotateLeft90</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate left</string>
+   </property>
+  </action>
+  <action name="actionOpen_Project">
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/project.png</normaloff>:/icon/icons/project.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+  </action>
+  <action name="actionSave_Project">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/save.png</normaloff>:/icon/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save Project</string>
+   </property>
+  </action>
+  <action name="actionPenWidth">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource/icons.qrc">
+     <normaloff>:/icon/icons/width.png</normaloff>:/icon/icons/width.png</iconset>
+   </property>
+   <property name="text">
+    <string>PenWidth</string>
+   </property>
+   <property name="toolTip">
+    <string>width/opacity/color</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

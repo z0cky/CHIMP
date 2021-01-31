@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/stylesheets">
+        <file>qss/MaterialDark.qss</file>
+        <file>qss/Aqua.qss</file>
+        <file>qss/AMOLED.qss</file>
+        <file>qss/ElegantDark.qss</file>
+        <file>qss/NeonButtons.qss</file>
+        <file>qss/PicPax.qss</file>
+        <file>qss/Genetive.qss</file>
+        <file>qss/TCobra.qss</file>
+    </qresource>
+</RCC>
